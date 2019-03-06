@@ -5,10 +5,11 @@
   "main": "index.js",
   "author": "Michael Zarli",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "dotenv": "^6.2.0",
