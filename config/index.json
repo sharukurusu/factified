@@ -1,0 +1,4 @@
+{
+  "dbUri": "mongodb://localhost/factified",
+  "jwtSecret": "a most secret of phrases"
+}

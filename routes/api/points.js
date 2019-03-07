@@ -12,16 +12,6 @@ router
 router
     .route("/:id/vote")
     .post(pointsController.vote)
-// router
-//     .route("/:id/downvote")
-//     .post(pointsController.downVote)
-// router
-//     .route("/:id/relevant")
-//     .post(pointsController.relevant)
-// router
-//     .route("/:id/irrelevant")
-//     .post(pointsController.irrelevant)
-
 router
   .route("/:id/subpoint")
   .post(pointsController.createSubPoint)

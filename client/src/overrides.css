@@ -1,0 +1,116 @@
+body {
+    padding-top: 54px;
+    width: 100%;
+    /* height: 100%; */
+    background: linear-gradient(45deg, #23813394, #000000, #256e88af);
+    background-size: 600% 600%;
+    background-attachment: fixed;
+
+    -webkit-animation: animatedBG 100s linear infinite;
+    -moz-animation: animatedBG 100s linear infinite;
+    animation: animatedBG 100s linear infinite;
+}
+    @-webkit-keyframes animatedBG {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+    @-moz-keyframes animatedBG {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+    @keyframes animatedBG { 
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+.jumbotron {
+    background-image: url("./jumbotronBG.jpg");
+    color: white;
+}
+
+.container {
+    padding: 0;
+    max-width: 768px;
+}
+
+.ideaCard {
+    margin-top: 1.5rem;
+    background: #3A3F44;
+    border: 1px solid black;
+}
+
+.noPaddingCardBody {
+    padding: 0;
+}
+
+.react-bs-table-bordered {
+    border: 0;
+    border-radius: 0;
+}
+
+#makePointButton {
+    margin: auto;
+}
+
+.pointBlock {
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "text text"
+    "vote links";
+    padding: 20px;
+    border: 1px solid black;
+}
+#pointBlockMain {
+    background-color: #272B30;
+    margin-top: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "title"
+    "text"
+    "stats";
+}
+#pointBlockMain h2 {
+    grid-area: title;
+}
+/* @media only screen and (max-width: 768px) {
+    
+    .pointBlock {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "text"
+        "stats";
+    }
+} */
+.pointBlock:nth-child(odd) {
+    background: #272B30;
+}
+.pointBlockStats {
+    display: flex;
+    justify-content: space-evenly;
+}
+.stats p {
+    margin:0;
+}
+
+.pointBlockText {
+    grid-area: text;
+    color:#c8c8c8;
+    background: #3e444c;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 100vw;
+}
+
+
+.pointBlockButtons {
+    grid-area: buttons;
+    align-self: center;
+}
+
